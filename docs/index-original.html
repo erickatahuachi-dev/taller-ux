@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Notas - Rediseño UX/UI</title>
+    <link rel="stylesheet" href="/docs/estilos-original.css">
+</head>
+<body>
+    <main class="tarjeta">
+        <h1>Mis Notas Personales</h1>
+        <p class="ayuda">Crea y organiza tus notas del día. Todos los campos son requeridos.</p>
+        
+        <form id="formulario-notas" novalidate>
+            <fieldset>
+                <legend>1. Contenido de la Nota</legend>
+                
+                <label for="titulo-nota">Título de la nota</label>
+                <input id="titulo-nota" type="text" autocomplete="off" required>
+                
+                <label for="categoria-nota">Categoría de la nota</label>
+                <select id="categoria-nota" required>
+                    <option value="">Selecciona una opción...</option>
+                    <optgroup label="Área Académica">
+                        <option value="Estudios">Estudios</option>
+                        <option value="Laboratorios">Laboratorios</option>
+                    </optgroup>
+                    <optgroup label="Área Personal">
+                        <option value="Trabajo">Trabajo</option>
+                        <option value="Pendientes">Pendientes</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <p id="mensaje-estado" class="mensaje" role="status"></p>
+
+            <div class="acciones">
+                <button type="submit" class="boton-principal">Guardar Nota</button>
+                <button type="reset" class="boton-secundario">Limpiar formulario</button>
+            </div>
+        </form>
+
+        <section class="lista-notas-contenedor">
+            <h2>Tus notas guardadas</h2>
+            <ul id="lista-notes"></ul>
+        </section>
+    </main>
+    <script src="./app-original.js"></script>
+</body>
+</html>
