@@ -1,6 +1,6 @@
 # Taller UX 
 Formulario de inscripcion redisenado aplicando principios de UX/UI. 
-Pagina publicada: https://erickatahuachi-dev.github.io/taller-ux/
+Pagina publicada: https://erickatahuachi-dev.github.io/taller-ux/docs/
 ## Cambios aplicados 
 | Principio | Cambio | 
 |-----------|--------| 
